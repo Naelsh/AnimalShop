@@ -40,5 +40,10 @@ namespace AnimalShop
             Weight = weight;
             Cost = cost;
         }
+
+        public override string ToString()
+        {
+            return $"Age: {Age}\nWeight: {Weight}\nCost: {Cost}";
+        }
     }
 }

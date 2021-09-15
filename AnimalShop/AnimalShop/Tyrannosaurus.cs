@@ -45,6 +45,11 @@ namespace AnimalShop
 
         }
 
+        public override string ToString()
+        {
+            return $"Tyranossaurus\n{base.ToString()}\nTeeth Count: {TeethCount}\nSkin Color: {SkinColor}\nFeed it {GoatsPerDay} goats per day";
+        }
+
         private static int AverageGoatsPerDay(int age)
         {
             switch(age)

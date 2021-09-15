@@ -6,7 +6,8 @@ namespace AnimalShop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tyrannosaurus tRex = new Tyrannosaurus();
+            Console.WriteLine(tRex.ToString());
         }
     }
 }
