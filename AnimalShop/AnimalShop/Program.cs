@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AnimalShop
 {
@@ -6,8 +7,13 @@ namespace AnimalShop
     {
         static void Main(string[] args)
         {
-            Tyrannosaurus tRex = new Tyrannosaurus();
-            Console.WriteLine(tRex.ToString());
+            AnimalShop animalShop = new AnimalShop();
+            Menu menu = new Menu();
+            menu.ShowMenu();
+            while(menu.HandleInput(Console.ReadLine(), animalShop))
+            {
+                Console.WriteLine($"You have purchased {animalShop.SoldAnimals.Count} so far.");
+            }
         }
     }
 }

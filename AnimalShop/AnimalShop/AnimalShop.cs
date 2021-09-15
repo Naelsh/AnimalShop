@@ -9,11 +9,18 @@ namespace AnimalShop
     {
         public double Balance
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
+
+        public List<Animal> SoldAnimals { get; private set; }
+
+        public AnimalShop()
+        {
+            Balance = 0;
+            SoldAnimals = new List<Animal>();
+        }
+
 
         public Animal SellAnimal(string animalName)
         {
@@ -34,11 +41,21 @@ namespace AnimalShop
                     animalToSell = new Goat();
                     break;
                 default:
-                    animalToSell = null;
-                    break;
+                    return null;
             }
             Balance += animalToSell.Cost;
+            SoldAnimals.Add(animalToSell);
             return animalToSell;
+        }
+
+        public void PrintAnimals()
+        {
+            foreach(Animal animal in SoldAnimals)
+            {
+                Console.WriteLine("-----");
+                Console.WriteLine(animal);
+            }
+            Console.WriteLine("-----");
         }
     }
 }
