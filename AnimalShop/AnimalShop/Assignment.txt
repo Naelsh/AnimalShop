@@ -14,10 +14,10 @@ DONE Each animal class should have at least three properties.
 DONE - Also create a class Animal that contains whatever properties all animals have
   in common. For example, each animal needs a price.
 DONE - Make sure that each specific animal class inherits from Animal.
-- AnimalShop should have a method "public Animal SellAnimal(string animalType)" that returns an animal of the specified type.
+DONE - AnimalShop should have a method "public Animal SellAnimal(string animalType)" that returns an animal of the specified type.
 If there is no such animal, for example if the user asks for a "crocodile" but you don't have a class Crocodile, it should return null.
-- When an animal is sold, the AnimalShop object should gain money.
-- Store the money in a property. //DONE
+DONE - When an animal is sold, the AnimalShop object should gain money.
+DONE - Store the money in a property.
 - Finally write a program that tests your classes (Menu).
   - It should create an object of the class AnimalShop.
   - Then buy some animals and print the values of all their properties.
