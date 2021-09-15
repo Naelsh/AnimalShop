@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace AnimalShop
 {
@@ -25,19 +27,20 @@ namespace AnimalShop
         public Animal SellAnimal(string animalName)
         {
             Animal animalToSell;
-            switch(animalName.ToLower().Trim())
+            string checkString = GetProper(animalName);
+            switch(checkString)
             {
-                case "tyrannosaurus":
+                case nameof(Tyrannosaurus):
                     animalToSell = new Tyrannosaurus();
                     Console.WriteLine("You probably want to buy a few days worth of goats!");
                     break;
-                case "stegosaurus":
+                case nameof(Stegosaurus):
                     animalToSell = new Stegosaurus();
                     break;
-                case "pterodactyl":
+                case nameof(Pterodactyl):
                     animalToSell = new Pterodactyl();
                     break;
-                case "goat":
+                case nameof(Goat):
                     animalToSell = new Goat();
                     break;
                 default:
@@ -46,6 +49,13 @@ namespace AnimalShop
             Balance += animalToSell.Cost;
             SoldAnimals.Add(animalToSell);
             return animalToSell;
+        }
+
+        private string GetProper(string text)
+        {
+            CultureInfo culture_info = Thread.CurrentThread.CurrentCulture;
+            TextInfo text_info = culture_info.TextInfo;
+            return text_info.ToTitleCase(text);
         }
 
         public void PrintAnimals()
