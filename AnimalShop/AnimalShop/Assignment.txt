@@ -9,11 +9,11 @@ Create a class named AnimalShop that represents the pet shop
 
 Features:
 
-- Create one class for each animal (at least three) that the shop can sell. //DONE
-- Each animal class should have at least three properties. //DONE
-- Also create a class Animal that contains whatever properties all animals have  //DONE
+DONE Create one class for each animal (at least three) that the shop can sell.
+DONE Each animal class should have at least three properties.
+DONE - Also create a class Animal that contains whatever properties all animals have
   in common. For example, each animal needs a price.
-- Make sure that each specific animal class inherits from Animal. //DONE
+DONE - Make sure that each specific animal class inherits from Animal.
 - AnimalShop should have a method "public Animal SellAnimal(string animalType)" that returns an animal of the specified type.
 If there is no such animal, for example if the user asks for a "crocodile" but you don't have a class Crocodile, it should return null.
 - When an animal is sold, the AnimalShop object should gain money.

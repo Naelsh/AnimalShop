@@ -22,7 +22,7 @@ namespace AnimalShop
         public string SkinColor
         {
             get;
-            set;
+            private set;
         }
 
         public Tyrannosaurus(int goatsPerDay, int teethCount, string skinColor, int age, double weight, float cost) : base(age, weight, cost)
@@ -50,6 +50,8 @@ namespace AnimalShop
             return $"Tyranossaurus\n{base.ToString()}\nTeeth Count: {TeethCount}\nSkin Color: {SkinColor}\nFeed it {GoatsPerDay} goats per day";
         }
 
+        // I hide this static method by using private in order to only let this class calculate this number. Other parts of the system only need to
+        // know the amount the instance eats, not the average for the species
         private static int AverageGoatsPerDay(int age)
         {
             switch(age)
