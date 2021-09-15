@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AnimalShop.Animal">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEIAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalShop.Tyrannosaurus">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAQAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tyrannosaurus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalShop.Stegosaurus">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Stegosaurus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalShop.Pterodactyl">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAICAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pterodactyl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalShop.Goat">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Goat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalShop.AnimalShop">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>AnimalShop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
