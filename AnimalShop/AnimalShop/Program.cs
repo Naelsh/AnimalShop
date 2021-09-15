@@ -11,7 +11,7 @@ namespace AnimalShop
             menu.ShowMenu();
             while(menu.HandleInput(Console.ReadLine(), animalShop))
             {
-                Console.WriteLine($"You have purchased {animalShop.SoldAnimals.Count} so far.");
+                Console.WriteLine($"You have purchased {animalShop.SoldAnimals.Count} animals so far.\nWith a total cost of {animalShop.Balance}");
             }
         }
     }

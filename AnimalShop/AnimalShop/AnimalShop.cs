@@ -50,13 +50,6 @@ namespace AnimalShop
             return animalToSell;
         }
 
-        //private string GetProper(string text)
-        //{
-        //    CultureInfo culture_info = Thread.CurrentThread.CurrentCulture;
-        //    TextInfo text_info = culture_info.TextInfo;
-        //    return text_info.ToTitleCase(text);
-        //}
-
         public void PrintAnimals()
         {
             foreach(Animal animal in SoldAnimals)
