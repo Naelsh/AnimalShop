@@ -9,26 +9,20 @@ namespace AnimalShop
     {
         public int GoatsPerDay
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public int TeethCount
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public string SkinColor
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }
