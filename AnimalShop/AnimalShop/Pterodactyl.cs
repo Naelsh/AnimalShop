@@ -3,8 +3,8 @@
     public class Pterodactyl : Animal
     {
         public string FeatherColor { get; private set; }
-        public float Wingspan { get; set; }
-        public float BeakLength { get; set; }
+        public float Wingspan { get; private set; }
+        public float BeakLength { get; private set; }
 
         public Pterodactyl(string featherColor, float wingspan, float beakLength, int age, double weight, float cost) : base(age, weight, cost)
         {

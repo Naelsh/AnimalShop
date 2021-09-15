@@ -2,8 +2,8 @@
 {
     public class Tyrannosaurus : Animal
     {
-        public int GoatsPerDay { get; set; }
-        public int TeethCount { get; set; }
+        public int GoatsPerDay { get; private set; }
+        public int TeethCount { get; private set; }
         public string SkinColor { get; private set; }
 
         public Tyrannosaurus(int goatsPerDay, int teethCount, string skinColor, int age, double weight, float cost) : base(age, weight, cost)

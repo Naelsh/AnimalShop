@@ -6,8 +6,8 @@
         // But we hide the Set for the property since other parts of the program should not be able to change the skin color
         // It doesn't make sense for the color to change at other times
         public string SkinColor { get; private set; }
-        public int BackplateCount { get; set; }
-        public float TailspikeLength { get; set; }
+        public int BackplateCount { get; private set; }
+        public float TailspikeLength { get; private set; }
 
         public Stegosaurus(string skinColor, int backplateCount, float tailSpikeLength, int age, double weight, float cost) : base(age, weight, cost)
         {

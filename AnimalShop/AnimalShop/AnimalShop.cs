@@ -8,7 +8,6 @@ namespace AnimalShop
     public class AnimalShop
     {
         public double Balance { get; private set; }
-
         public List<Animal> SoldAnimals { get; private set; }
 
         public AnimalShop()
