@@ -54,7 +54,14 @@ namespace AnimalShop
                 return false;
             }
 
-            // TODO Extract in order to have the animal shop handle its own shit
+            TryPurchaseAnimal(input, animalShop);
+
+            Console.WriteLine($"You have purchased {animalShop.SoldAnimals.Count} animals so far.\nWith a total cost of {animalShop.Balance}");
+            return true;
+        }
+
+        private static void TryPurchaseAnimal(string input, AnimalShop animalShop)
+        {
             Animal animal = animalShop.SellAnimal(input);
             if(animal == null)
             {
@@ -65,8 +72,6 @@ namespace AnimalShop
                 Console.WriteLine("Congratulations you purchased: ");
                 Console.WriteLine(animal);
             }
-            Console.WriteLine($"You have purchased {animalShop.SoldAnimals.Count} animals so far.\nWith a total cost of {animalShop.Balance}");
-            return true;
         }
     }
 }
