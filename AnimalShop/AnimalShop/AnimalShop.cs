@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Threading;
 
 namespace AnimalShop
@@ -27,7 +25,8 @@ namespace AnimalShop
         public Animal SellAnimal(string animalName)
         {
             Animal animalToSell;
-            string checkString = GetProper(animalName);
+            string checkString = animalName.GetProper();
+
             switch(checkString)
             {
                 case nameof(Tyrannosaurus):
@@ -51,12 +50,12 @@ namespace AnimalShop
             return animalToSell;
         }
 
-        private string GetProper(string text)
-        {
-            CultureInfo culture_info = Thread.CurrentThread.CurrentCulture;
-            TextInfo text_info = culture_info.TextInfo;
-            return text_info.ToTitleCase(text);
-        }
+        //private string GetProper(string text)
+        //{
+        //    CultureInfo culture_info = Thread.CurrentThread.CurrentCulture;
+        //    TextInfo text_info = culture_info.TextInfo;
+        //    return text_info.ToTitleCase(text);
+        //}
 
         public void PrintAnimals()
         {
