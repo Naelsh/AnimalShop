@@ -43,7 +43,7 @@ namespace AnimalShop
 
         public override string ToString()
         {
-            return $"Age: {Age}\nWeight: {Weight}\nCost: {Cost}";
+            return $"Age: {Age}\nWeight: {Weight}kg\nCost: {Cost}€";
         }
     }
 }

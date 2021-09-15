@@ -39,7 +39,7 @@ namespace AnimalShop
 
         public override string ToString()
         {
-            return $"Pterodactyl\n{base.ToString()}\nWingspan: {Wingspan}\nFeather Color: {FeatherColor}\nBe ware of the {BeakLength} long beak riddled with teeth";
+            return $"Pterodactyl\n{base.ToString()}\nWingspan: {Wingspan}cm\nFeather Color: {FeatherColor}\nBe ware of the {BeakLength}cm long beak riddled with teeth";
         }
     }
 }
