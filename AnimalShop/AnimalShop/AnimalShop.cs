@@ -19,8 +19,9 @@ namespace AnimalShop
         public Animal SellAnimal(string animalName)
         {
             Animal animalToSell;
-            string checkString = animalName.GetProper();
+            string checkString = animalName.GetProper(); // Tried an extension method here, it is declared in "StringExtensions"
 
+            // Used nameof in order to avoid string references as much as possible.
             switch(checkString)
             {
                 case nameof(Tyrannosaurus):

@@ -13,16 +13,12 @@
             SkinColor = skinColor;
         }
 
-        // You can use different constructors in order to set values based on different criterias.
-        // In this case I base the feeding requirement based on the age and then using the above constructor to set the values
         public Tyrannosaurus(int teethCount, string skinColor, int age, double weight, float cost)
             : this(AverageGoatsPerDay(age), teethCount, skinColor, age, weight, cost)
         {
         }
 
-        public Tyrannosaurus() : this(4,60,"Green",1,4500,10000)
-        {
-        }
+        public Tyrannosaurus() : this(4,60,"Green",1,4500,10000) { }
 
         public override string ToString()
         {

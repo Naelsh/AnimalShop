@@ -2,9 +2,6 @@
 {
     public class Stegosaurus : Animal
     {
-        // We have the Get as public in order to let other parts of the program access the value.
-        // But we hide the Set for the property since other parts of the program should not be able to change the skin color
-        // It doesn't make sense for the color to change at other times
         public string SkinColor { get; private set; }
         public int BackplateCount { get; private set; }
         public float TailspikeLength { get; private set; }
