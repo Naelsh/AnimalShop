@@ -2,23 +2,9 @@
 {
     public class Tyrannosaurus : Animal
     {
-        public int GoatsPerDay
-        {
-            get;
-            set;
-        }
-
-        public int TeethCount
-        {
-            get;
-            set;
-        }
-
-        public string SkinColor
-        {
-            get;
-            private set;
-        }
+        public int GoatsPerDay { get; set; }
+        public int TeethCount { get; set; }
+        public string SkinColor { get; private set; }
 
         public Tyrannosaurus(int goatsPerDay, int teethCount, string skinColor, int age, double weight, float cost) : base(age, weight, cost)
         {
@@ -32,12 +18,10 @@
         public Tyrannosaurus(int teethCount, string skinColor, int age, double weight, float cost)
             : this(AverageGoatsPerDay(age), teethCount, skinColor, age, weight, cost)
         {
-
         }
 
         public Tyrannosaurus() : this(4,60,"Green",1,4500,10000)
         {
-
         }
 
         public override string ToString()

@@ -7,11 +7,7 @@ namespace AnimalShop
 {
     public class AnimalShop
     {
-        public double Balance
-        {
-            get;
-            set;
-        }
+        public double Balance { get; private set; }
 
         public List<Animal> SoldAnimals { get; private set; }
 
@@ -20,7 +16,6 @@ namespace AnimalShop
             Balance = 0;
             SoldAnimals = new List<Animal>();
         }
-
 
         public Animal SellAnimal(string animalName)
         {
