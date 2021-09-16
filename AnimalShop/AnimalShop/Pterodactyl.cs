@@ -17,7 +17,7 @@
 
         public override string ToString()
         {
-            return $"Pterodactyl\n{base.ToString()}\nWingspan: {Wingspan}cm\nFeather Color: {FeatherColor}\nBe ware of the {BeakLength}cm long beak riddled with teeth";
+            return $"{nameof(Pterodactyl)}\n{base.ToString()}\nWingspan: {Wingspan}cm\nFeather Color: {FeatherColor}\nBe ware of the {BeakLength}cm long beak riddled with teeth";
         }
     }
 }

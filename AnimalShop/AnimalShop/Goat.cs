@@ -22,7 +22,7 @@ namespace AnimalShop
 
         public override string ToString()
         {
-            return $"Goat\n{base.ToString()}\nBeard Length: {BeardLength}cm\nFur Color: {FurColor}\nBe ware of the {HornLength}cm horns!";
+            return $"{nameof(Goat)}\n{base.ToString()}\nBeard Length: {BeardLength}cm\nFur Color: {FurColor}\nBe ware of the {HornLength}cm horns!";
         }
 
     }

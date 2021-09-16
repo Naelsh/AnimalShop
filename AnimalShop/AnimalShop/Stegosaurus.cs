@@ -17,7 +17,7 @@
 
         public override string ToString()
         {
-            return $"Stegosaurs\n{base.ToString()}\nBackplate Count: {BackplateCount}\nSkin Color: {SkinColor}\nBe ware of the {TailspikeLength}cm long tailspikes, of which there are four!";
+            return $"{nameof(Stegosaurus)}\n{base.ToString()}\nBackplate Count: {BackplateCount}\nSkin Color: {SkinColor}\nBe ware of the {TailspikeLength}cm long tailspikes, of which there are four!";
         }
     }
 }

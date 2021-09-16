@@ -22,7 +22,7 @@
 
         public override string ToString()
         {
-            return $"Tyranossaurus\n{base.ToString()}\nTeeth Count: {TeethCount}\nSkin Color: {SkinColor}\nFeed it {GoatsPerDay} goats per day";
+            return $"{nameof(Tyrannosaurus)}\n{base.ToString()}\nTeeth Count: {TeethCount}\nSkin Color: {SkinColor}\nFeed it {GoatsPerDay} goats per day";
         }
 
         // I hide this static method by using private in order to only let this class calculate this number. Other parts of the system only need to

@@ -13,7 +13,7 @@ namespace AnimalShop
 
         private void ShowBody()
         {
-            Console.WriteLine("\nWelcome in!\nThe animals we have in stock are\nTyrannosaurus\nStegosaurus\nPterodactyl\nGoats (mainly as food for the T-Rex)\n" +
+            Console.WriteLine($"\nWelcome in!\nThe animals we have in stock are\n{nameof(Tyrannosaurus)}\n{nameof(Stegosaurus)}\n{nameof(Pterodactyl)}\n{nameof(Goat)} (mainly as food for the T-Rex)\n" +
                             "Please enter the name of the animal in order to buy it\n" +
                             "Write \"List\" to see animals you have bought\n" +
                             "If you want to exit the shop, write Q\n");
