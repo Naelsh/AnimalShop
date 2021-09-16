@@ -11,6 +11,18 @@ namespace AnimalShop.Tests
                 new Tyrannosaurus(),
                 "Tyrannosaurus"
             };
+            yield return new object[] {
+                new Stegosaurus(),
+                "Stegosaurus"
+            };
+            yield return new object[] {
+                new Pterodactyl(),
+                "Pterodactyl"
+            };
+            yield return new object[] {
+                new Goat(),
+                "Goat"
+            };
         }
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
