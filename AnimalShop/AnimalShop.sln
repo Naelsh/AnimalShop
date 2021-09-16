@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalShop", "AnimalShop\AnimalShop.csproj", "{71C40CB8-0948-4F0C-B05E-F2F817A70ECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_AnimalShop", "UnitTest_AnimalShop\UnitTest_AnimalShop.csproj", "{2B87DDDE-26FD-45E3-8B84-8F14872808BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalShop.Tests", "AnimalShop.Tests\AnimalShop.Tests.csproj", "{381ECE55-8968-4A76-AA22-EA802A63A4F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{71C40CB8-0948-4F0C-B05E-F2F817A70ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71C40CB8-0948-4F0C-B05E-F2F817A70ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71C40CB8-0948-4F0C-B05E-F2F817A70ECF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B87DDDE-26FD-45E3-8B84-8F14872808BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B87DDDE-26FD-45E3-8B84-8F14872808BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B87DDDE-26FD-45E3-8B84-8F14872808BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B87DDDE-26FD-45E3-8B84-8F14872808BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{381ECE55-8968-4A76-AA22-EA802A63A4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381ECE55-8968-4A76-AA22-EA802A63A4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381ECE55-8968-4A76-AA22-EA802A63A4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381ECE55-8968-4A76-AA22-EA802A63A4F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
