@@ -2,14 +2,9 @@
 {
     public static class StringExtensions
     {
-        public static string GetProper(this string text)
+        public static string ToProper(this string text)
         {
-            if(text.Length < 2)
-            {
-                return text.ToUpper();
-            }
-
-            return char.ToUpper(text[0]) + text[1..].ToLower();
+            return text.Length < 2 ? text.ToUpper() : char.ToUpper(text[0]) + text[1..].ToLower();
         }
     }
 }
