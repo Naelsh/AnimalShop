@@ -8,7 +8,8 @@ namespace AnimalShop.Tests
         public IEnumerator<object[]> GetEnumerator()
         {
             yield return new object[] {
-                new Tyrannosaurus()
+                new Tyrannosaurus(),
+                "Tyrannosaurus"
             };
         }
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
