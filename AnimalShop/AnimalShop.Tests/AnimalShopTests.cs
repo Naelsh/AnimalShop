@@ -9,15 +9,15 @@ namespace AnimalShop.Tests
 {
     public class AnimalShopTests
     {
-        [Fact]
-        public void SellAnimal_EmptyString()
+        [Theory]
+        [InlineData(null ,"")]
+        public void SellAnimal_EmptyString(Animal expected, string animalName)
         {
             // Arrange
-            Animal expected = null;
             AnimalShop animalShop = new AnimalShop();
 
             // Act
-            Animal actual = animalShop.SellAnimal("");
+            Animal actual = animalShop.SellAnimal(animalName);
 
             // Assert
             Assert.Equal(expected, actual);

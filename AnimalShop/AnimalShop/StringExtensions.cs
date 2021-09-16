@@ -4,12 +4,7 @@
     {
         public static string GetProper(this string text)
         {
-            if(text.Length < 2)
-            {
-                return text.ToUpper();
-            }
-
-            return char.ToUpper(text[0]) + text[1..].ToLower();
+            return text.Length < 2 ? text.ToUpper() : char.ToUpper(text[0]) + text[1..].ToLower();
         }
     }
 }
