@@ -4,11 +4,7 @@
     {
         public static string GetProper(this string text)
         {
-            if(text.Length == 0)
-            {
-                return text;
-            }
-            if(text.Length == 1)
+            if(text.Length < 2)
             {
                 return text.ToUpper();
             }
