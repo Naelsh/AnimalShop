@@ -1,6 +1,6 @@
 ﻿namespace AnimalShop
 {
-    public class Animal
+    public abstract class Animal
     {
         // Used protected for setting values since it should not be possible for functionality outside of the class to change the values.
         // The protected makes it private except for subclasses who can still inherit the and work with the values.
