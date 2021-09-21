@@ -14,7 +14,7 @@
         // to change the logic later on
         public Animal() : this(0, 100, 10) {}
 
-        public Animal(int age, double weight, float cost)
+        public Animal(int age, double weight, decimal cost)
         {
             Age = age;
             Weight = weight;

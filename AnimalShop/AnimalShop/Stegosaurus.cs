@@ -6,7 +6,7 @@
         public int BackplateCount { get; private set; }
         public float TailspikeLength { get; private set; }
 
-        public Stegosaurus(string skinColor, int backplateCount, float tailSpikeLength, int age, double weight, float cost) : base(age, weight, cost)
+        public Stegosaurus(string skinColor, int backplateCount, float tailSpikeLength, int age, double weight, decimal cost) : base(age, weight, cost)
         {
             SkinColor = skinColor;
             BackplateCount = backplateCount;

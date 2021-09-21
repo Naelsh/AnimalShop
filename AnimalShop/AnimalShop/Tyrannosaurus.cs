@@ -6,14 +6,14 @@
         public int TeethCount { get; private set; }
         public string SkinColor { get; private set; }
 
-        public Tyrannosaurus(int goatsPerDay, int teethCount, string skinColor, int age, double weight, float cost) : base(age, weight, cost)
+        public Tyrannosaurus(int goatsPerDay, int teethCount, string skinColor, int age, double weight, decimal cost) : base(age, weight, cost)
         {
             GoatsPerDay = goatsPerDay;
             TeethCount = teethCount;
             SkinColor = skinColor;
         }
 
-        public Tyrannosaurus(int teethCount, string skinColor, int age, double weight, float cost)
+        public Tyrannosaurus(int teethCount, string skinColor, int age, double weight, decimal cost)
             : this(AverageGoatsPerDay(age), teethCount, skinColor, age, weight, cost)
         {
         }

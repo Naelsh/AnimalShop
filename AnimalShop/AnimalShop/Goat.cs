@@ -6,7 +6,7 @@
         public float HornLength { get; private set; }
         public float BeardLength { get; private set; }
 
-        public Goat(string furColor, float hornLength, float beardLength, int age, double weight, float cost) : base(age, weight, cost)
+        public Goat(string furColor, float hornLength, float beardLength, int age, double weight, decimal cost) : base(age, weight, cost)
         {
             FurColor = furColor;
             HornLength = hornLength;
