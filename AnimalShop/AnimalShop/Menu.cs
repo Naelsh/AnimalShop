@@ -13,8 +13,8 @@ namespace AnimalShop
 
         private void ShowBody()
         {
-            Console.WriteLine($"\nWelcome in!\nThe animals we have in stock are\n{nameof(Tyrannosaurus)}\n{nameof(Stegosaurus)}\n{nameof(Pterodactyl)}\n{nameof(Goat)} (mainly as food for the T-Rex)\n" +
-                            "Please enter the name of the animal in order to buy it\n" +
+            Console.WriteLine($"\nWelcome in!\nThe animals we have in stock are\n- {nameof(Tyrannosaurus)}\n- {nameof(Stegosaurus)}\n- {nameof(Pterodactyl)}\n- {nameof(Goat)} (mainly as food for the T-Rex)\n" +
+                            "\nPlease enter the name of the animal in order to buy it\n" +
                             "Write \"List\" to see animals you have bought\n" +
                             "If you want to exit the shop, write Q\n");
         }
@@ -22,10 +22,10 @@ namespace AnimalShop
         private void ShowHeader()
         {
             Console.WriteLine(
-                @"$$$$$$$\  $$\                                $$\    " + "\n" +
+                @"$$$$$$$\  $$\                                $$\" + "\n" +
                 @"$$  __$$\ \__ |                              $$ |" + "\n" +
-                @"$$ |  $$ |$$\ $$$$$$$\   $$$$$$\   $$$$$$$\$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\  " + "\n" +
-                @"$$ |  $$ |$$ |$$  __$$\ $$  __$$\ $$  _____\_$$ _ | $$  __$$\ $$  __$$\ $$  __$$\ " + "\n" +
+                @"$$ |  $$ |$$\ $$$$$$$\   $$$$$$\   $$$$$$$\$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\" + "\n" +
+                @"$$ |  $$ |$$ |$$  __$$\ $$  __$$\ $$  _____\_$$ _ | $$  __$$\ $$  __$$\ $$  __$$\" + "\n" +
                 @"$$ |  $$ |$$ |$$ |  $$ |$$ /  $$ |\$$$$$$\   $$ |   $$ /  $$ |$$ |  \__|$$$$$$$$ |" + "\n" +
                 @"$$ |  $$ |$$ |$$ |  $$ |$$ |  $$ | \____$$\  $$ |$$\$$ |  $$ |$$ |      $$  ____ |" + "\n" +
                 @"$$$$$$$  |$$ |$$ |  $$ |\$$$$$$  |$$$$$$$  | \$$$$  \$$$$$$  |$$ |      \$$$$$$$\ " + "\n" +
@@ -57,6 +57,7 @@ namespace AnimalShop
             TryPurchaseAnimal(input, animalShop);
 
             Console.WriteLine($"You have purchased {animalShop.SoldAnimals.Count} animals so far.\nWith a total cost of {animalShop.Balance}");
+            Console.WriteLine("\nIf you want to purchase more animals, refer to the meny options at the top");
             return true;
         }
 
